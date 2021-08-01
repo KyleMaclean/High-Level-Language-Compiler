@@ -1,1 +1,1 @@
-# High-Level-Language-Compiler
+Function definitions are expressions with local arguments which can include variables and functions defined previously. The types of all expressions in the program's abstract syntax tree are checked before compilation. The virtual machine is based on a stack; each program's global variable values are stored at the base of it. The Stack Base register stores the address of the global stack base. During function execution, the Local Base register stores the address of that function's activation record.
