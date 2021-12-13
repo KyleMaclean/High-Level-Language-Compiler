@@ -50,7 +50,7 @@ counterUpdateT :: Counter -> TAMSt ()
 counterUpdateT c = do ts <- stStateT
                       stUpdateT (ts { tsCounter = c })
 
--- convenience functions to accessing and modifying the stack and local bases
+-- convenience functions for accessing and modifying the stack and local bases
 sbT :: TAMSt Int
 sbT = do ts <- stStateT
          return (tsSB ts)
